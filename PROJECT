@@ -2,6 +2,10 @@ domain: awes.one
 layout: go.kubebuilder.io/v2
 projectName: wordpress-operator
 repo: github.com/raynix/wordpress-operator
+resources:
+- group: webapp
+  kind: WordPressSite
+  version: v1alpha1
 version: 3-alpha
 plugins:
   go.sdk.operatorframework.io/v2-alpha: {}
